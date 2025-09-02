@@ -20,6 +20,7 @@ body {
 h1 {
     text-align: center;
     color: #333;
+    font-size: 1.8em;
     margin-bottom: 25px;
 }
 
@@ -27,44 +28,44 @@ h1 {
     margin-bottom: 30px;
 }
 
+/* 这里是修改的部分 */
 .product-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* 将所有项目靠左对齐 */
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #eee;
+    gap: 30px; /* 增加项目之间的间距，让它们不至于挤在一起 */
 }
 
 .product-item:last-child {
     border-bottom: none;
 }
 
-/* 这里是修改的部分 */
 .product-name {
-    font-size: 2.5em; /* 显著增大字体 */
+    font-size: 2.5em;
     font-weight: bold;
     color: #555;
-    flex-grow: 1; /* 让名称占据更多空间 */
-    margin-right: 10px; /* 增加与价格或数量控制的间距 */
+    white-space: nowrap; /* 防止名称换行 */
 }
 
-
 .product-price {
-    font-size: 1.5em; /* 价格也相应增大一些 */
+    font-size: 1.5em;
     color: #888;
-    white-space: nowrap; /* 防止价格换行 */
+    white-space: nowrap;
 }
 
 .quantity-control {
     display: flex;
     align-items: center;
-    flex-shrink: 0; /* 防止数量控制部分被挤压 */
+    margin-left: auto; /* 让数量控制部分推到最右边 */
+    flex-shrink: 0;
 }
 
 button {
-    font-size: 1.8em; /* 按钮文字也增大 */
-    width: 55px; /* 按钮宽度增大 */
-    height: 55px; /* 按钮高度增大 */
+    font-size: 1.8em;
+    width: 55px;
+    height: 55px;
     border: 1px solid #ddd;
     border-radius: 50%;
     background-color: #f9f9f9;
@@ -78,22 +79,22 @@ button:active {
 }
 
 .quantity {
-    font-size: 2em; /* 数量显示也增大 */
+    font-size: 2em;
     font-weight: bold;
-    margin: 0 18px; /* 调整间距 */
-    width: 50px; /* 增加宽度，防止数字过大时显示不全 */
+    margin: 0 18px;
+    width: 50px;
     text-align: center;
 }
 
 .total-section {
     text-align: center;
-    margin-top: 25px; /* 调整间距 */
+    margin-top: 25px;
     padding-top: 25px;
     border-top: 2px solid #f0f0f0;
 }
 
 .total-price {
-    font-size: 2.2em; /* 总价字体增大 */
+    font-size: 2.2em;
     font-weight: bold;
     color: #e67e22;
     margin-bottom: 25px;
@@ -104,12 +105,12 @@ button:active {
 }
 
 #reset-btn {
-    width: 180px; /* 重置按钮宽度增大 */
-    height: 60px; /* 重置按钮高度增大 */
-    font-size: 1.5em; /* 重置按钮字体增大 */
+    width: 180px;
+    height: 60px;
+    font-size: 1.5em;
     color: #fff;
     background-color: #3498db;
-    border-radius: 30px; /* 调整圆角 */
+    border-radius: 30px;
     border: none;
 }
 
