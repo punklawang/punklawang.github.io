@@ -20,7 +20,6 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    font-size: 1.8em;
     margin-bottom: 25px;
 }
 
@@ -30,42 +29,36 @@ h1 {
 
 .product-item {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #eee;
-    gap: 30px;
 }
 
 .product-item:last-child {
     border-bottom: none;
 }
 
-/* 调整商品名称字体大小 */
 .product-name {
-    font-size: 2em; /* 字体缩小一点 */
+    font-size: 1.2em;
     font-weight: bold;
     color: #555;
-    white-space: nowrap;
 }
 
 .product-price {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: #888;
-    white-space: nowrap;
 }
 
 .quantity-control {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    flex-shrink: 0;
 }
 
 button {
-    font-size: 1.8em;
-    width: 55px;
-    height: 55px;
+    font-size: 1.5em;
+    width: 45px;
+    height: 45px;
     border: 1px solid #ddd;
     border-radius: 50%;
     background-color: #f9f9f9;
@@ -79,25 +72,25 @@ button:active {
 }
 
 .quantity {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin: 0 18px;
-    width: 50px;
+    margin: 0 15px;
+    width: 40px;
     text-align: center;
 }
 
 .total-section {
     text-align: center;
-    margin-top: 25px;
-    padding-top: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 2px solid #f0f0f0;
 }
 
 .total-price {
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #e67e22;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #total-amount {
@@ -105,12 +98,12 @@ button:active {
 }
 
 #reset-btn {
-    width: 180px;
-    height: 60px;
-    font-size: 1.5em;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
     color: #fff;
     background-color: #3498db;
-    border-radius: 30px;
+    border-radius: 25px;
     border: none;
 }
 
