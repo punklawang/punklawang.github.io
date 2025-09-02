@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月饼计费系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>月饼计费系统</h1>
+
+        <div class="product-list">
+            <div class="product-item">
+                <span class="product-name">鲜肉月饼</span>
+                <span class="product-price">4元</span>
+                <div class="quantity-control">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus-btn">+</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <span class="product-name">豆沙月饼</span>
+                <span class="product-price">3元</span>
+                <div class="quantity-control">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus-btn">+</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <span class="product-name">蛋黄酥</span>
+                <span class="product-price">8元</span>
+                <div class="quantity-control">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">0</span>
+                    <button class="plus-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <div class="total-price">总价: <span id="total-amount">0</span> 元</div>
+            <button id="reset-btn">清空</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
