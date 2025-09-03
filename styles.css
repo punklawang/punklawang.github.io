@@ -28,11 +28,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+/* 这里是修改的部分 */
 .product-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 15px;
+    padding: 30px 15px; /* 上下内边距增大一倍，左右不变 */
     border-bottom: 1px solid #eee;
     gap: 30px;
 }
